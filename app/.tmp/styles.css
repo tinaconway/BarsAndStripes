@@ -140,7 +140,7 @@ a {
   color: #333333; }
 
 #username {
-  font-size: 1vmax; }
+  font-size: 1.5vmax; }
 
 .navbar-default {
   color: #333333; }
@@ -445,6 +445,9 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
+.buttonsWrapper {
+  margin-right: 1%; }
+
 .details {
   float: right;
   vertical-align: text-bottom;
@@ -494,10 +497,10 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;

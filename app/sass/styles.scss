@@ -121,7 +121,7 @@ a {
 }
 
 #username {
-  font-size: 1vmax;
+  font-size: 1.5vmax;
 }
 
 .navbar-default {
@@ -408,6 +408,10 @@ a {
     align-items: center;
   }
 
+  .buttonsWrapper {
+    margin-right: 1%;
+  }
+
   .details {
     float: right;
     vertical-align: text-bottom;
@@ -460,7 +464,7 @@ a {
   .placeContainer {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
   }
 

@@ -47,7 +47,6 @@ angular.module('places')
           })
 
         });
-        console.log(data[0].photo[0].html_attributions);
         return data;
 
       })
