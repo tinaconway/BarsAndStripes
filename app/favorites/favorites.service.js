@@ -2,13 +2,13 @@
   'use strict';
   angular
   .module('favorites')
-  .factory('FavoritesService', function ($http, $rootScope) {
+  .factory('FavoritesService', function ($http, $rootScope, Account) {
+
     var url = 'http://tiy-fee-rest.herokuapp.com/collections/barsNstripes1' + $rootScope.username;
-    console.log($rootScope.username);
+
     var addFavorite = function (place) {
       $http.post(url, place).success(function (resp) {
         $rootScope.$broadcast('favortie:added')
-        console.log("place:", place);
       }).error(function (err) {
         console.log(err);
       });
@@ -20,8 +20,6 @@
     };
 
     var getFavorite = function (id) {
-      console.log("getFavorite");
-      console.log(id);
       return $http.get(url + '/' + id);
     };
 

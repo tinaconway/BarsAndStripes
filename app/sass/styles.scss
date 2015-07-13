@@ -327,7 +327,6 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
   height: 150px;
   margin: 2%;
   background-color: $darkBlue;
@@ -459,6 +458,7 @@ a {
   .addToFavorites:hover {
     text-decoration: none;
     color: #AC0000;
+    cursor: pointer;
   }
 
   .placeContainer {

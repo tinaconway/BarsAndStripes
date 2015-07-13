@@ -2,7 +2,7 @@
   'use strict';
   angular
   .module('favorites')
-  .controller('FavoritesController', function ($scope, FavoritesService, $routeParams) {
+  .controller('FavoritesController', function ($scope, FavoritesService, Account, $routeParams, $rootScope) {
 
     FavoritesService.getFavorites().then(function (data) {
       $scope.favorites = data;
@@ -17,7 +17,6 @@
     };
 
     $scope.deleteFavorite = function (id) {
-      console.log(id);
       FavoritesService.delete(id);
     };
 

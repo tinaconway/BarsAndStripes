@@ -6,7 +6,22 @@ var long;
 
 
 angular.module('places')
-  .controller('PlacesController', function($scope, $auth, $alert, Account, PlaceService, $routeParams, $sce, uiGmapGoogleMapApi) {
+  .controller('PlacesController', function($scope, $auth, $alert, Account, PlaceService, $routeParams, $sce, uiGmapGoogleMapApi, $rootScope) {
+    Account.getProfile()
+      .success(function(data) {
+        console.log(data.displayName);
+        $rootScope.user = data;
+        $rootScope.username = data.displayName
+      })
+      .error(function(error) {
+        $alert({
+          content: error.message,
+          animation: 'fadeZoomFadeDown',
+          type: 'material',
+          duration: 3
+        });
+      });
+
     $scope.getCurrentLocation = function() {
       navigator.geolocation.getCurrentPosition(function(position) {
         lat = position.coords.latitude;

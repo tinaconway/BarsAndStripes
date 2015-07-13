@@ -23,14 +23,16 @@
               <img ng-src="" alt="" />
             <div class="titleHeartWrapper">
               <a id ="placeTitle" class="individualPlace" href="#/places/{{place.id}}">{{place.name}}</a>
-              <div class="addToFavorites" ng-model="place" ng-click="addToFavorites(place)" ng-controller="FavoritesController">Add to &#9825</div>
             </div>
           </div>
           </div>
         <div class="info">
           <div class="address">{{place.address}}</div><br>
           <div class="rating" ng-click="">&#10025 {{place.rating}}</div><br>
-          <a href="#/places/{{place.id}}"><button class="details">Details</button></a>
+          <div class="buttonsWrapper">
+            <a href="#/place/{{place._id}}"><button class="details">Details</button></a>
+            <a><button class="details" ng-model="place" ng-click="addToFavorites(place)" ng-controller="FavoritesController">Earn Stripe <i class="fa fa-server"></i></button></a>
+          </div>
         </div>
       </div>
       </div>
