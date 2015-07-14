@@ -329,6 +329,10 @@ a {
   * Stripes page
   *********************/
 .profileStats {
+  background: -webkit-linear-gradient(left, rgba(0, 37, 102, 0.9), rgba(0, 37, 102, 0.9)), url("../Images/EagleStare.jpeg") no-repeat no-repeat;
+  background: linear-gradient(to right, rgba(0, 37, 102, 0.9), rgba(0, 37, 102, 0.9)), url("../Images/EagleStare.jpeg") no-repeat no-repeat;
+  background-size: 100%;
+  background-position: 0px -280px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -342,6 +346,7 @@ a {
           flex-wrap: wrap;
   height: 150px;
   margin: 2%;
+  border: 3px solid #333333;
   background-color: #002566; }
   .profileStats .declaration {
     width: 100%;

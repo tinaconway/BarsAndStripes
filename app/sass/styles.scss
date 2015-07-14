@@ -324,11 +324,15 @@ a {
   * Stripes page
   *********************/
 .profileStats {
+  background:  linear-gradient(to right, rgba(0, 37, 102, 0.9), rgba(0, 37, 102, 0.9)), url('../Images/EagleStare.jpeg') no-repeat no-repeat;
+  background-size: 100%;
+  background-position: 0px -280px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   height: 150px;
   margin: 2%;
+  border: 3px solid $text;
   background-color: $darkBlue;
   .declaration {
     width: 100%;
