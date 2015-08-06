@@ -14,8 +14,7 @@ angular.module('MyApp', [
 .config(function($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: 'places/views/location.html',
-      controller: 'PlacesController'
+      templateUrl: 'places/views/location.html'
     })
     .when('/404', {
       template: '<h1>Sorry, page not found</h1>'
