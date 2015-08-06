@@ -9,11 +9,11 @@ angular.module('places', [
 .config(function($routeProvider, uiGmapGoogleMapApiProvider) {
   $routeProvider
     .when('/places', {
-      templateUrl: 'places/views/list.html',
+      templateUrl: 'places/Views/list.html',
       controller: 'PlacesController'
     })
     .when('/places/:placeId', {
-      templateUrl: 'places/views/detail.html',
+      templateUrl: 'places/Views/detail.html',
       controller: 'PlacesController'
     })
     uiGmapGoogleMapApiProvider.configure({

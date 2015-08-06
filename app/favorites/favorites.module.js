@@ -7,11 +7,11 @@
     .config(function ($routeProvider) {
       $routeProvider
       .when('/favorites/:_id', {
-        templateUrl: 'favorites/views/detail.html',
+        templateUrl: 'favorites/Views/detail.html',
         controller: 'FavoritesController'
       })
       .when('/favorites', {
-        templateUrl: 'favorites/views/list.html',
+        templateUrl: 'favorites/Views/list.html',
         controller: 'FavoritesController'
       });
     });
