@@ -124,11 +124,9 @@ a {
   background-color: #AC0000; }
 
 .navbar-default .navbar-nav > li > a {
-  color: #333333;
-  text-shadow: 1px 1px 1px white; }
+  color: #333333; }
   .navbar-default .navbar-nav > li > a:hover {
     color: #FFFFFF;
-    text-shadow: 1px 1px 1px #333333;
     -webkit-transition: ease .25s;
             transition: ease .25s; }
 
@@ -147,12 +145,10 @@ a {
 
 .navbar-default .navbar-brand {
   color: #333333;
-  text-shadow: 2px 2px 1px #FFFFFF;
   margin: 3%; }
 
 .navbar-default .navbar-brand:hover {
   color: #657FAD;
-  text-shadow: 2px 2px 1px #333333;
   background-color: #fff; }
 
 .brandWrapper {
@@ -353,11 +349,10 @@ a {
     font-size: 3vmax;
     font-family: ScriptFont;
     color: #FFFFFF;
-    text-shadow: 2px 2px 1px #AC0000;
     text-align: center; }
   .profileStats .barsVisited {
     font-size: 2.5vmax;
-    text-shadow: 1px 1px 1px black; }
+    color: white; }
 
 /*********************
   * places page
@@ -836,3 +831,61 @@ span {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+@media all and (max-width: 1000px) {
+  .home-signedout, .login, .sign-up, .navbar-brand, .title {
+    font-size: 2em; }
+
+  .brandWrapper .navbar-brand {
+    font-size: 1.4em;
+    width: 250px; } }
+@media all and (max-width: 530px) {
+  .home-signedout, .login, .sign-up {
+    font-size: 2.3em; }
+
+  .brandWrapper .navbar-brand {
+    font-size: 1.5em;
+    width: 250px; }
+
+  .beerpin {
+    margin-left: 20px; }
+
+  .containTitle {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: .6em; }
+
+  .rating {
+    margin-right: 20px; } }
+@media all and (max-width: 470px) {
+  .home-signedout, .login, .sign-up {
+    font-size: 1.3em; }
+
+  .brandWrapper .navbar-brand {
+    font-size: 1.2em; }
+
+  .beerpin {
+    margin-left: 40px; }
+
+  .listImg {
+    display: none; }
+
+  .address {
+    font-size: 1.3em;
+    width: 200%; }
+
+  .placeContainer {
+    width: 60%; }
+
+  .imageTitleWrapper {
+    width: 26%; }
+
+  .details {
+    font-size: 1.3em; }
+
+  .rating {
+    margin-right: 20px; }
+
+  .searchbox {
+    margin-left: 20px;
+    margin-right: 20px; } }

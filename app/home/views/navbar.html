@@ -2,21 +2,22 @@
   <div class="navbar-header">
 
     <div class="brandWrapper">
-      <a class="navbar-brand" href="/#/"><img class="beerpin" src="Images/beer_pin.png" alt="">Bars and Stripes</a>
+      <a class="navbar-brand" href="/#/"><img class="beerpin" src="Images/beer_pin.png" alt=""><span class="navbar-brand title">Bars and Stripes</span></a>
     </div>
   </div>
   <ul id="headerLinks" class="nav navbar-nav">
-    <li><a href="/#/">Home</a></li>
-    <li><a href="/#/posts" ng-if="isAuthenticated()">Message Board</a></li>
-    <li><a href="/#/favorites" ng-if="isAuthenticated()">Stripes</a></li>
+    <li><a class="home" href="/#/" ng-if="isAuthenticated()">Home</a></li>
+    <li><a class="posts" href="/#/posts" ng-if="isAuthenticated()">Message Board</a></li>
+    <li><a class="favorites" href="/#/favorites" ng-if="isAuthenticated()">Stripes</a></li>
   </ul>
   <ul id="signUpWrapper" ng-if="!isAuthenticated()" class="nav navbar-nav pull-right">
-    <li><a href="/#/login">Login</a></li>
-    <li><a href="/#/signup">Sign up</a></li>
+      <li><a class="home-signedout" href="/#/">Home</a></li>
+    <li><a class="login" href="/#/login">Login</a></li>
+    <li><a class="sign-up" href="/#/signup">Sign up</a></li>
   </ul>
   <ul ng-if="isAuthenticated()" class="nav navbar-nav pull-right">
-    <li><a href="/#/logout">Logout</a></li>
-    <li><a href="/#/profile">Profile</a></li>
-    <li><a id="username" href="/#/profile">Username:{{username}}</a></li>
+    <li><a class="logout" href="/#/logout">Logout</a></li>
+    <li><a class="profile" href="/#/profile">Profile</a></li>
+
   </ul>
 </div>

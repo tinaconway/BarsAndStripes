@@ -103,10 +103,9 @@ a {
 
 .navbar-default .navbar-nav>li>a {
     color: $text;
-    text-shadow: 1px 1px 1px white;
     &:hover {
       color: $white;
-      text-shadow: 1px 1px 1px $text;
+
       transition: ease .25s;
     }
 }
@@ -130,13 +129,11 @@ a {
 
 .navbar-default .navbar-brand {
   color: $text;
-  text-shadow: 2px 2px 1px $white;
   margin: 3%;
 }
 
 .navbar-default .navbar-brand:hover {
   color: $mediumBlue;
-  text-shadow: 2px 2px 1px $text;
   background-color: #fff;
 }
 
@@ -339,12 +336,11 @@ a {
     font-size: 3vmax;
     font-family: ScriptFont;
     color: $white;
-    text-shadow: 2px 2px 1px $red;
     text-align: center;
   }
   .barsVisited {
     font-size: 2.5vmax;
-    text-shadow: 1px 1px 1px black;
+    color: white;
   }
 }
 
@@ -854,4 +850,70 @@ span {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+@media all and (max-width: 1000px) {
+  .home-signedout, .login, .sign-up, .navbar-brand, .title{
+    font-size: 2em;
+  }
+  .brandWrapper .navbar-brand {
+    font-size: 1.4em;
+    width: 250px;
+  }
+
+}
+@media all and (max-width: 530px) {
+  .home-signedout, .login, .sign-up, {
+    font-size: 2.3em;
+  }
+  .brandWrapper .navbar-brand {
+    font-size: 1.5em;
+    width: 250px;
+  }
+  .beerpin {
+    margin-left: 20px;
+  }
+  .containTitle {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: .6em;
+  }
+  .rating {
+    margin-right: 20px;
+  }
+
+}
+@media all and (max-width: 470px) {
+  .home-signedout, .login, .sign-up, {
+    font-size: 1.3em;
+  }
+  .brandWrapper .navbar-brand {
+    font-size: 1.2em;
+
+  }
+.beerpin {
+  margin-left: 40px;
+}
+.listImg {
+  display: none;
+}
+.address {
+  font-size: 1.3em;
+  width: 200%;
+}
+.placeContainer {
+  width: 60%;
+}
+.imageTitleWrapper {
+  width: 26%;
+}
+.details {
+  font-size: 1.3em;
+}
+.rating {
+  margin-right: 20px;
+}
+.searchbox {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 }
