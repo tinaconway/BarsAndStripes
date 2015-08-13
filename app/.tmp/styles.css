@@ -887,11 +887,11 @@ span {
     margin-left: 150px; } }
 @media all and (max-width: 530px) {
   .navbar-default .navbar-nav > li > a {
-    font-size: 1.8em; }
+    font-size: 1em; }
 
   .brandWrapper .navbar-brand {
-    font-size: 1.5em;
-    margin-left: -50px; }
+    font-size: 1.2em;
+    margin-left: -30px; }
 
   .beerpin {
     display: none !important; }

@@ -3,8 +3,8 @@
   angular
   .module('favorites')
   .factory('FavoritesService', function ($http, $rootScope, Account) {
-
-    var url = 'http://tiy-fee-rest.herokuapp.com/collections/barsNstripes1' + $rootScope.username;
+    var url = '/api/collections' + '/' + $rootScope.username;
+    // var url = 'http://tiy-fee-rest.herokuapp.com/collections/barsNstripes1' + $rootScope.username;
 
     var addFavorite = function (place) {
       $http.post(url, place).success(function (resp) {
