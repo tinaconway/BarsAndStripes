@@ -546,7 +546,8 @@ a {
 
 .individualPlaceDetailTitle {
   color: #002566;
-  font-size: 40px; }
+  font-size: 40px;
+  margin-top: 20px; }
 
 .detailsRating {
   font-size: 25px;
@@ -832,23 +833,68 @@ span {
   margin-top: 10px;
   margin-bottom: 10px; }
 
+@media all and (max-width: 1330px) {
+  .individualPlaceDetailTitle, .detailsWebsiteLink, .detailsContact, .detailsAddress {
+    margin-left: 290px; } }
 @media all and (max-width: 1000px) {
   .home-signedout, .login, .sign-up, .navbar-brand, .title {
     font-size: 2em; }
 
   .brandWrapper .navbar-brand {
     font-size: 1.4em;
-    width: 250px; } }
+    margin-left: 10px;
+    width: 200px;
+    margin-left: 0;
+    float: left; }
+
+  .individualPlaceDetailTitle, .detailsWebsiteLink, .detailsContact, .detailsAddress {
+    margin-left: 200px; } }
+@media all and (max-width: 750px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 1.6em; }
+
+  .brandWrapper .navbar-brand {
+    font-size: 1.4em; }
+
+  .listImg {
+    display: none; }
+
+  .rating {
+    display: none; }
+
+  .individualPlaceList .titleHeartWrapper {
+    width: 100%; }
+
+  .address {
+    width: 60%;
+    font-size: 20px;
+    padding-right: 10px; }
+
+  .info {
+    width: 70%;
+    float: right; }
+
+  .imageTitleWrapper {
+    width: 30%; }
+
+  .posts {
+    display: none !important; }
+
+  #headerLinks {
+    width: 20%; }
+
+  .individualPlaceDetailTitle, .detailsWebsiteLink, .detailsContact, .detailsAddress {
+    margin-left: 150px; } }
 @media all and (max-width: 530px) {
-  .home-signedout, .login, .sign-up {
-    font-size: 2.3em; }
+  .navbar-default .navbar-nav > li > a {
+    font-size: 1.8em; }
 
   .brandWrapper .navbar-brand {
     font-size: 1.5em;
-    width: 250px; }
+    margin-left: -50px; }
 
   .beerpin {
-    margin-left: 20px; }
+    display: none !important; }
 
   .containTitle {
     padding-right: 10px;
@@ -856,36 +902,59 @@ span {
     font-size: .6em; }
 
   .rating {
-    margin-right: 20px; } }
-@media all and (max-width: 470px) {
-  .home-signedout, .login, .sign-up {
-    font-size: 1.3em; }
+    margin-right: 20px; }
 
-  .brandWrapper .navbar-brand {
-    font-size: 1.2em; }
+  .address {
+    display: none; }
 
-  .beerpin {
-    margin-left: 40px; }
+  .rating {
+    display: none; }
 
   .listImg {
     display: none; }
 
+  .placeContainer {
+    width: 100%; }
+
+  .titleHeartWrapper {
+    width: 100%; } }
+@media all and (max-width: 470px) {
+  .listImg {
+    display: none; }
+
   .address {
-    font-size: 1.3em;
-    width: 200%; }
+    display: none; }
 
   .placeContainer {
-    width: 60%; }
+    width: 100%; }
 
   .imageTitleWrapper {
     width: 26%; }
 
   .details {
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    width: 150px; }
 
   .rating {
-    margin-right: 20px; }
+    display: none; }
 
   .searchbox {
-    margin-left: 20px;
-    margin-right: 20px; } }
+    margin-left: 30px;
+    margin-right: 40px; }
+
+  .titleHeartWrapper {
+    width: 100%; }
+
+  .individualPlaceList .titleHeartWrapper #placeTitle {
+    font-size: 2em;
+    margin-left: 20px; }
+
+  .individualPlaceDetailTitle, .detailsWebsiteLink, .detailsContact, .detailsAddress {
+    margin-left: 100px; } }
+@media all and (max-width: 400px) {
+  .individualPlaceList .titleHeartWrapper #placeTitle {
+    font-size: 2em;
+    margin-left: 20px; }
+
+  .individualPlaceDetailTitle, .detailsWebsiteLink, .detailsContact, .detailsAddress {
+    margin-left: 60px; } }

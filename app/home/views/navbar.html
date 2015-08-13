@@ -1,3 +1,4 @@
+
 <div ng-controller="NavbarCtrl" class="navbar navbar-default navbar-static-top">
   <div class="navbar-header">
 
@@ -7,7 +8,7 @@
   </div>
   <ul id="headerLinks" class="nav navbar-nav">
     <li><a class="home" href="/#/" ng-if="isAuthenticated()">Home</a></li>
-    <li><a class="posts" href="/#/posts" ng-if="isAuthenticated()">Message Board</a></li>
+    <li><a class="posts" href="/#/posts" ng-if="isAuthenticated()" >Message Board</a></li>
     <li><a class="favorites" href="/#/favorites" ng-if="isAuthenticated()">Stripes</a></li>
   </ul>
   <ul id="signUpWrapper" ng-if="!isAuthenticated()" class="nav navbar-nav pull-right">

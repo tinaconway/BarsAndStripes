@@ -1,6 +1,6 @@
 <div class=contain ng-controller="PlacesController">
   <div class="individualPlaceDetails">
-      <a href="#/places"><button class="backToPlaces" ng-click="back">Back</button></a>
+      <a href="#/"><button class="backToPlaces" ng-click="back">Back</button></a>
     <div class="placeDetailContainer">
   <!--       <img ng-src="http://baystreetbiergarten.com/wp-content/themes/baystreetbiergarten/-/img/logo.png" alt="" /> -->
         <div class="detailsRating">&#10025 {{place.rating}}</div>
@@ -9,9 +9,8 @@
     <div class="detailsInfo">
       <p class="individualPlaceDetailTitle">{{place.name}}</p>
         <div class="detailsAddress">{{place.address}}</div>
-        <div class="detailsContact">Phone: {{place.phone}}</div>
+        <div class="detailsContact">{{place.phone}}</div>
         <div class="detailsHoursOfOperation">{{place.hours}}</div>
-        <div class="detailsHappyHours">Happy Hours: 4-7</div>
         <a href="{{ place.website }}" class="detailsWebsiteLink">Visit the Website</a>
     </div>
     <div class=placeDetailContainer>
